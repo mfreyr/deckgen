@@ -9,7 +9,6 @@ linters:
     - staticcheck 
     - unused 
     - ineffassign 
-    - exportloopref 
 
     - errorlint 
     - sqlclosecheck 
