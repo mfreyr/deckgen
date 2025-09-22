@@ -1,0 +1,44 @@
+version: "2"
+run:
+  relative-path-mode: gomod
+linters:
+  default: none
+  enable:
+    - errcheck 
+    - govet 
+    - staticcheck 
+    - unused 
+    - ineffassign 
+
+    - errorlint 
+    - sqlclosecheck 
+    - rowserrcheck 
+
+    - gosec 
+    - bodyclose 
+    - wrapcheck 
+    - noctx 
+    - containedctx 
+    - canonicalheader 
+    - nosprintfhostport 
+    - errchkjson 
+    - loggercheck 
+
+    - prealloc 
+    - gocritic 
+
+    - funlen 
+    - gocognit 
+  settings:
+    funlen:
+      lines: 100
+      statements: 50
+    loggercheck:
+      slog: true
+      zap: true
+      kitlog: false
+      klog: false
+      logr: false
+formatters:
+  enable:
+    - gofumpt
