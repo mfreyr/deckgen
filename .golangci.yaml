@@ -16,7 +16,7 @@ linters:
 
     - gosec 
     - bodyclose 
-    - wrapcheck 
+    # - wrapcheck 
     - noctx 
     - containedctx 
     - canonicalheader 

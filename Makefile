@@ -9,7 +9,7 @@ build: deps
 	@echo "Generating Go code from templ files..."
 	templ generate
 	@echo "Building production binary..."
-	go build -ldflags="-w -s" -o $(BIN_DIR)/$(BINARY_NAME) ./cmd/server/main.go
+	go build -ldflags="-w -s" -o $(BIN_DIR)/$(BINARY_NAME) ./cmd/server
 
 dev: deps
 	@echo "Starting development server with live reload..."
